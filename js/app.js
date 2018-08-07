@@ -28,14 +28,8 @@ const words = [
   "hero",
   "javascript"
 ];
-const levels = {
-  easy: 5,
-  medium: 3,
-  hard: 2
-};
-const currentLevel = 5;
 
-let time = currentLevel;
+let time = 6;
 let score = 0;
 let isPlaying;
 
@@ -52,13 +46,13 @@ function init() {
 }
 const setTime = _ => {
   if (dificulty === "Easy") {
-    time = 5;
+    time = 6;
     $secondsDif.innerHTML = time;
   } else if (dificulty === "Medium") {
-    time = 3;
+    time = 4;
     $secondsDif.innerHTML = time;
   } else if (dificulty === "Hard") {
-    time = 2;
+    time = 3;
     $secondsDif.innerHTML = time;
   }
 };
