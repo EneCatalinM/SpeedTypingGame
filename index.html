@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="container">
+            <div class="typing-header">
+                <h1 class="typing-title">WordBeater</h1>
+            </div>
+            <div class="typing-body">
+                <p class="typing-hint">Type the given word within
+                    <span class="seconds">5</span> seconds</p>
+                <h1 class="typing-word">laughter</h1>
+                <input type="text" class="typing" id="word-input" placeholder="Start typing..." autofocus>
+                <h3 class="typingGame">Correct!!!</h3>
+                <div class="typing-show">
+                    <h2 class="typing-timeLeft">Time Left:
+                        <span class="time">3</span>
+                    </h2>
+                    <h2 class="typing-score">Score:
+                        <span class="score">3</span>
+                    </h2>
+                </div>
+                <div class="typing-instructions">
+                    <h2 class="typing-instructions-title">Instructions</h2>
+                    <p class="typing-instructions-howToPlay">Type each word in the given amount of seconds to score. To play again, just type the current word. Your
+                        score will reset</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="dificulty">
+                    <button class="changeDificulty">press for changing the difficulty
+                    </button>
+                </div>
+            </div>
+            <div class="backdrop"></div>
+            <div class="modal">
+                <h1 class="modal-title">Chose your difficulty for the game</h1>
+                <select name="" id="list">
+                    <option value="Easy"></option>
+                    <option value="Hard">Hard</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Easy">Easy</option>
+                </select>
+                <div class="modal-actions">
+                    <button class="btn-cancel">Cancel</button>
+                    <button class="btn-confirm">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

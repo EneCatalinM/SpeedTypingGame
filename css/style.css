@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background: #001514;
+  --text: #fffdfd;
+  --titleBackground: #13293d;
+  --seconds: #aad922;
+  --textWord: #9b1d20;
+}
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  background: var(--background);
+  color: var(--text);
+  text-align: center;
+}
+.typing-header {
+  width: 100%;
+  background: var(--titleBackground);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.typing-hint {
+  margin: 1rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.seconds {
+  color: var(--seconds);
+}
+.typing-word {
+  margin: 1rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  color: var(--textWord);
+}
+.typing {
+  margin: 1rem;
+  width: 40%;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--textWord);
+  border-radius: 1rem;
+  outline: none;
+}
+.typingGame {
+  margin: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.typing-show {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.typing-instructions {
+  width: 40%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: var(--titleBackground);
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+.typing-instructions-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.typing-instructions-howToPlay {
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+.dificulty {
+  margin: 1rem;
+}
+.changeDificulty {
+  border: none;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-transform: capitalize;
+  transition: all 1s ease;
+}
+.changeDificulty:hover {
+  background: var(--seconds);
+}
+.backdrop {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+.modal {
+  display: none;
+  z-index: 200;
+  padding: 2rem 1rem;
+  background: white;
+  top: 40%;
+  left: 35%;
+  width: 30%;
+  position: fixed;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+.modal-title {
+  color: var(--textWord);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-cancel,
+.btn-confirm {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+}
+.btn-cancel {
+  border: 2px solid var(--textWord);
+}
+.btn-confirm {
+  border: 2px solid var(--seconds);
+}
+#list {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: none;
+  border: 2px solid red;
+}
+#list:hover {
+  border: 2px solid green;
+}
+option {
+  border: none;
+}
